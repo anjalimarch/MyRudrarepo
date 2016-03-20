@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="4" failed="0" total="7" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="My Project" duration-ms="0" started-at="2016-03-13T12:18:02Z" finished-at="2016-03-13T12:18:02Z">
+    <groups>
+    </groups>
+  </suite> <!-- My Project -->
+  <suite name="PortFolio" duration-ms="75745" started-at="2016-03-13T12:16:44Z" finished-at="2016-03-13T12:18:00Z">
+    <groups>
+    </groups>
+    <test name="LoginTest" duration-ms="34632" started-at="2016-03-13T12:16:44Z" finished-at="2016-03-13T12:17:19Z">
+      <class name="com.selenium.framework.datadriven.PortFolio.LoginTest">
+        <test-method status="PASS" signature="initLogs()[pri:0, instance:com.selenium.framework.datadriven.PortFolio.LoginTest@59338918]" name="initLogs" is-config="true" duration-ms="90" started-at="2016-03-13T17:46:44Z" finished-at="2016-03-13T17:46:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initLogs -->
+        <test-method status="FAIL" signature="logintest(java.util.Hashtable)[pri:0, instance:com.selenium.framework.datadriven.PortFolio.LoginTest@59338918]" name="logintest" duration-ms="31166" started-at="2016-03-13T17:46:46Z" data-provider="suiteADataProvider" finished-at="2016-03-13T17:47:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=anjalimarch24@gmail.com, Password=rudransh, Runmode=Y, Expected_Result=SUCCESS, Browser=Mozilla, Result=}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Title does not match expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Title does not match expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.selenium.framework.datadriven.PortFolio.LoginTest.logintest(LoginTest.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.selenium.framework.datadriven.PortFolio.LoginTest@59338918]" name="close" is-config="true" duration-ms="1345" started-at="2016-03-13T17:47:17Z" finished-at="2016-03-13T17:47:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="SKIP" signature="logintest(java.util.Hashtable)[pri:0, instance:com.selenium.framework.datadriven.PortFolio.LoginTest@59338918]" name="logintest" duration-ms="161" started-at="2016-03-13T17:47:19Z" data-provider="suiteADataProvider" finished-at="2016-03-13T17:47:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=anjalimarch24@gmail.com, Password=rudransh, Runmode=N, Expected_Result=FAILURE, Browser=Chrome, Result=}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test LoginTestinside thePortFolioTest]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test LoginTestinside thePortFolioTest
+	at com.selenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:92)
+	at com.selenium.framework.datadriven.PortFolio.LoginTest.logintest(LoginTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.selenium.framework.datadriven.PortFolio.LoginTest@59338918]" name="close" is-config="true" duration-ms="0" started-at="2016-03-13T17:47:19Z" finished-at="2016-03-13T17:47:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="SKIP" signature="logintest(java.util.Hashtable)[pri:0, instance:com.selenium.framework.datadriven.PortFolio.LoginTest@59338918]" name="logintest" duration-ms="141" started-at="2016-03-13T17:47:19Z" data-provider="suiteADataProvider" finished-at="2016-03-13T17:47:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=anjalimarch24@gmail.com, Password=rudransh, Runmode=N, Expected_Result=SUCCESS, Browser=Chrome, Result=}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test LoginTestinside thePortFolioTest]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test LoginTestinside thePortFolioTest
+	at com.selenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:92)
+	at com.selenium.framework.datadriven.PortFolio.LoginTest.logintest(LoginTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.selenium.framework.datadriven.PortFolio.LoginTest@59338918]" name="close" is-config="true" duration-ms="0" started-at="2016-03-13T17:47:19Z" finished-at="2016-03-13T17:47:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.selenium.framework.datadriven.PortFolio.LoginTest -->
+    </test> <!-- LoginTest -->
+    <test name="TopAssetsperTest" duration-ms="19470" started-at="2016-03-13T12:17:19Z" finished-at="2016-03-13T12:17:39Z">
+      <class name="com.selenium.framework.datadriven.PortFolio.TopAssetsperTest">
+        <test-method status="PASS" signature="initLogs()[pri:0, instance:com.selenium.framework.datadriven.PortFolio.TopAssetsperTest@8e81918]" name="initLogs" is-config="true" duration-ms="1" started-at="2016-03-13T17:47:19Z" finished-at="2016-03-13T17:47:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initLogs -->
+        <test-method status="PASS" signature="topperformingassetstest(java.util.Hashtable)[pri:0, instance:com.selenium.framework.datadriven.PortFolio.TopAssetsperTest@8e81918]" name="topperformingassetstest" duration-ms="17096" started-at="2016-03-13T17:47:19Z" data-provider="suiteADataProvider" finished-at="2016-03-13T17:47:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Runmode=Y, Browser=Chrome, Result=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- topperformingassetstest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.selenium.framework.datadriven.PortFolio.TopAssetsperTest@8e81918]" name="close" is-config="true" duration-ms="1863" started-at="2016-03-13T17:47:36Z" finished-at="2016-03-13T17:47:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="SKIP" signature="topperformingassetstest(java.util.Hashtable)[pri:0, instance:com.selenium.framework.datadriven.PortFolio.TopAssetsperTest@8e81918]" name="topperformingassetstest" duration-ms="207" started-at="2016-03-13T17:47:38Z" data-provider="suiteADataProvider" finished-at="2016-03-13T17:47:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Runmode=N, Browser=Mozilla, Result=}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test TopPerformingAssetsTestinside thePortFolioTest]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test TopPerformingAssetsTestinside thePortFolioTest
+	at com.selenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:92)
+	at com.selenium.framework.datadriven.PortFolio.TopAssetsperTest.topperformingassetstest(TopAssetsperTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- topperformingassetstest -->
+        <test-method status="SKIP" signature="topperformingassetstest(java.util.Hashtable)[pri:0, instance:com.selenium.framework.datadriven.PortFolio.TopAssetsperTest@8e81918]" name="topperformingassetstest" duration-ms="221" started-at="2016-03-13T17:47:38Z" data-provider="suiteADataProvider" finished-at="2016-03-13T17:47:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Runmode=N, Browser=Chrome, Result=}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test TopPerformingAssetsTestinside thePortFolioTest]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test TopPerformingAssetsTestinside thePortFolioTest
+	at com.selenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:92)
+	at com.selenium.framework.datadriven.PortFolio.TopAssetsperTest.topperformingassetstest(TopAssetsperTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- topperformingassetstest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.selenium.framework.datadriven.PortFolio.TopAssetsperTest@8e81918]" name="close" is-config="true" duration-ms="0" started-at="2016-03-13T17:47:38Z" finished-at="2016-03-13T17:47:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.selenium.framework.datadriven.PortFolio.TopAssetsperTest@8e81918]" name="close" is-config="true" duration-ms="0" started-at="2016-03-13T17:47:39Z" finished-at="2016-03-13T17:47:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.selenium.framework.datadriven.PortFolio.TopAssetsperTest -->
+    </test> <!-- TopAssetsperTest -->
+    <test name="Test3" duration-ms="21599" started-at="2016-03-13T12:17:39Z" finished-at="2016-03-13T12:18:00Z">
+      <class name="com.selenium.framework.datadriven.PortFolio.Test3">
+        <test-method status="PASS" signature="initLogs()[pri:0, instance:com.selenium.framework.datadriven.PortFolio.Test3@5c2f925d]" name="initLogs" is-config="true" duration-ms="2" started-at="2016-03-13T17:47:39Z" finished-at="2016-03-13T17:47:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initLogs -->
+        <test-method status="FAIL" signature="test3(java.util.Hashtable)[pri:0, instance:com.selenium.framework.datadriven.PortFolio.Test3@5c2f925d]" name="test3" duration-ms="19580" started-at="2016-03-13T17:47:39Z" data-provider="suiteADataProvider" finished-at="2016-03-13T17:47:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Date=11-04-2016, PurchasePrice=13, Runmode=Y, Expected_Result=SUCCESS, Quantity=12, StockName=Asian Paints Pvt Ltd, Browser=Chrome, Result=}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Title does not match expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Title does not match expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.selenium.framework.datadriven.PortFolio.Test3.test3(Test3.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.selenium.framework.datadriven.PortFolio.Test3@5c2f925d]" name="close" is-config="true" duration-ms="1847" started-at="2016-03-13T17:47:58Z" finished-at="2016-03-13T17:48:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.selenium.framework.datadriven.PortFolio.Test3 -->
+    </test> <!-- Test3 -->
+  </suite> <!-- PortFolio -->
+</testng-results>

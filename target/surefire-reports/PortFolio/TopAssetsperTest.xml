@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="welcome-PC" name="com.selenium.framework.datadriven.PortFolio.TopAssetsperTest" tests="3" failures="1" timestamp="20 Mar 2016 12:22:45 GMT" time="4.252" errors="0">
+  <testcase name="topperformingassetstest" time="0.84" classname="com.selenium.framework.datadriven.PortFolio.TopAssetsperTest">
+    <skipped/>
+  </testcase>
+  <testcase name="topperformingassetstest" time="0.912" classname="com.selenium.framework.datadriven.PortFolio.TopAssetsperTest">
+    <skipped/>
+  </testcase>
+  <testcase name="topperformingassetstest" time="3.244" classname="com.selenium.framework.datadriven.PortFolio.TopAssetsperTest">
+    <failure type="java.lang.AssertionError" message="Not able to open browser - Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: &amp;apos;2.42.2&amp;apos;, revision: &amp;apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&amp;apos;, time: &amp;apos;2014-06-03 10:52:47&amp;apos;
+System info: host: &amp;apos;welcome-PC&amp;apos;, ip: &amp;apos;192.168.1.6&amp;apos;, os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.7.0_79&amp;apos;
+Driver info: driver.version: RemoteWebDriver">
+      <![CDATA[java.lang.AssertionError: Not able to open browser - Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'welcome-PC', ip: '192.168.1.6', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Driver info: driver.version: RemoteWebDriver
+	at com.selenium.framework.datadriven.TestBase.openBrowser(TestBase.java:143)
+	at com.selenium.framework.datadriven.TestBase.doLogin(TestBase.java:217)
+	at com.selenium.framework.datadriven.TestBase.doDefaultLogin(TestBase.java:237)
+	at com.selenium.framework.datadriven.PortFolio.TopAssetsperTest.topperformingassetstest(TopAssetsperTest.java:34)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 10 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

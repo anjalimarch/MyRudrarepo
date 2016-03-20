@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="welcome-PC" name="com.selenium.framework.datadriven.PortFolio.Test5" tests="3" failures="0" timestamp="3 Mar 2016 20:13:10 GMT" time="0.911" errors="0">
+  <testcase name="test5" time="0.181" classname="com.selenium.framework.datadriven.PortFolio.Test5"/>
+  <testcase name="test5" time="0.315" classname="com.selenium.framework.datadriven.PortFolio.Test5">
+    <skipped/>
+  </testcase>
+  <testcase name="test5" time="0.168" classname="com.selenium.framework.datadriven.PortFolio.Test5"/>
+</testsuite>

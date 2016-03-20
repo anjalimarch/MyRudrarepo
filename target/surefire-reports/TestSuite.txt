@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 3, Errors: 0, Skipped: 4, Time elapsed: 21.396 sec <<< FAILURE!
+logintest(com.selenium.framework.datadriven.PortFolio.LoginTest)  Time elapsed: 4.539 sec  <<< FAILURE!
+java.lang.AssertionError: Not able to open browser - Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'welcome-PC', ip: '192.168.1.6', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Driver info: driver.version: RemoteWebDriver
+	at org.testng.Assert.fail(Assert.java:89)
+	at com.selenium.framework.datadriven.TestBase.openBrowser(TestBase.java:143)
+	at com.selenium.framework.datadriven.TestBase.doLogin(TestBase.java:217)
+	at com.selenium.framework.datadriven.PortFolio.LoginTest.logintest(LoginTest.java:48)
+
+topperformingassetstest(com.selenium.framework.datadriven.PortFolio.TopAssetsperTest)  Time elapsed: 3.297 sec  <<< FAILURE!
+java.lang.AssertionError: Not able to open browser - Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'welcome-PC', ip: '192.168.1.6', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Driver info: driver.version: RemoteWebDriver
+	at org.testng.Assert.fail(Assert.java:89)
+	at com.selenium.framework.datadriven.TestBase.openBrowser(TestBase.java:143)
+	at com.selenium.framework.datadriven.TestBase.doLogin(TestBase.java:217)
+	at com.selenium.framework.datadriven.TestBase.doDefaultLogin(TestBase.java:237)
+	at com.selenium.framework.datadriven.PortFolio.TopAssetsperTest.topperformingassetstest(TopAssetsperTest.java:34)
+
+test3(com.selenium.framework.datadriven.PortFolio.Test3)  Time elapsed: 2.2 sec  <<< FAILURE!
+java.lang.AssertionError: Not able to open browser - Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'welcome-PC', ip: '192.168.1.6', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Driver info: driver.version: RemoteWebDriver
+	at org.testng.Assert.fail(Assert.java:89)
+	at com.selenium.framework.datadriven.TestBase.openBrowser(TestBase.java:143)
+	at com.selenium.framework.datadriven.TestBase.doLogin(TestBase.java:217)
+	at com.selenium.framework.datadriven.TestBase.doDefaultLogin(TestBase.java:237)
+	at com.selenium.framework.datadriven.PortFolio.Test3.test3(Test3.java:27)
+

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">2 suites</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-PortFolio">
+              <span class="suite-name border-skipped">PortFolio</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-PortFolio">
+                    <span>D:\RudranshFramework\Frameworkdatadriven\My_WebDriver_Datadriven_framework\src\test\resources\Suite_A.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-PortFolio">
+                    <span class="test-stats">5 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-PortFolio">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-PortFolio">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-PortFolio">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-PortFolio">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-PortFolio">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">7 methods,  4 skipped,  3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-PortFolio" class="hide-methods failed suite-PortFolio"> (hide)</a> <!-- hide-methods failed suite-PortFolio -->
+                      <a href="#" panel-name="suite-PortFolio" class="show-methods failed suite-PortFolio"> (show)</a> <!-- show-methods failed suite-PortFolio -->
+                    </span>
+                    <div class="method-list-content failed suite-PortFolio">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PortFolio" title="com.selenium.framework.datadriven.PortFolio.LoginTest" hash-for-method="logintest({Username=anjalimarch24@gmail.com, Password=rudransh, Runmode=Y, Expected_Result=SUCCESS, Browser=Mo...)">logintest({Username=anjalimarch24@gmail.com, Password=rudransh, Runmode=Y, Expected_Result=SUCCESS, Browser=Mo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PortFolio" title="com.selenium.framework.datadriven.PortFolio.Test3" hash-for-method="test3({Date=11-04-2016, PurchasePrice=13, Runmode=Y, Expected_Result=SUCCESS, Quantity=12, StockName=Asian...)">test3({Date=11-04-2016, PurchasePrice=13, Runmode=Y, Expected_Result=SUCCESS, Quantity=12, StockName=Asian...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-PortFolio -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-PortFolio" class="hide-methods skipped suite-PortFolio"> (hide)</a> <!-- hide-methods skipped suite-PortFolio -->
+                      <a href="#" panel-name="suite-PortFolio" class="show-methods skipped suite-PortFolio"> (show)</a> <!-- show-methods skipped suite-PortFolio -->
+                    </span>
+                    <div class="method-list-content skipped suite-PortFolio">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PortFolio" title="com.selenium.framework.datadriven.PortFolio.LoginTest" hash-for-method="logintest({Username=anjalimarch24@gmail.com, Password=rudransh, Runmode=N, Expected_Result=SUCCESS, Browser=Ch...)">logintest({Username=anjalimarch24@gmail.com, Password=rudransh, Runmode=N, Expected_Result=SUCCESS, Browser=Ch...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PortFolio" title="com.selenium.framework.datadriven.PortFolio.LoginTest" hash-for-method="logintest({Username=anjalimarch24@gmail.com, Password=rudransh, Runmode=N, Expected_Result=FAILURE, Browser=Ch...)">logintest({Username=anjalimarch24@gmail.com, Password=rudransh, Runmode=N, Expected_Result=FAILURE, Browser=Ch...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PortFolio" title="com.selenium.framework.datadriven.PortFolio.TopAssetsperTest" hash-for-method="topperformingassetstest({Runmode=N, Browser=Chrome, Result=})">topperformingassetstest({Runmode=N, Browser=Chrome, Result=})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PortFolio" title="com.selenium.framework.datadriven.PortFolio.TopAssetsperTest" hash-for-method="topperformingassetstest({Runmode=N, Browser=Mozilla, Result=})">topperformingassetstest({Runmode=N, Browser=Mozilla, Result=})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-PortFolio -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-PortFolio" class="hide-methods passed suite-PortFolio"> (hide)</a> <!-- hide-methods passed suite-PortFolio -->
+                      <a href="#" panel-name="suite-PortFolio" class="show-methods passed suite-PortFolio"> (show)</a> <!-- show-methods passed suite-PortFolio -->
+                    </span>
+                    <div class="method-list-content passed suite-PortFolio">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PortFolio" title="com.selenium.framework.datadriven.PortFolio.TopAssetsperTest" hash-for-method="topperformingassetstest({Runmode=Y, Browser=Chrome, Result=})">topperformingassetstest({Runmode=Y, Browser=Chrome, Result=})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-PortFolio -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-My_Project" class="panel My_Project">
+        </div> <!-- panel My_Project -->
+        <div panel-name="suite-PortFolio" class="panel PortFolio">
+          <div class="suite-PortFolio-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.selenium.framework.datadriven.PortFolio.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logintest({Username=anjalimarch24@gmail.com, Password=rudransh, Runmode=N, Expected_Result=SUCCESS, Browser=Ch...)">
+                  </a> <!-- logintest({Username=anjalimarch24@gmail.com, Password=rudransh, Runmode=N, Expected_Result=SUCCESS, Browser=Ch...) -->
+                  <span class="method-name">logintest</span>
+                  <span class="parameters">({Username=anjalimarch24@gmail.com, Password=rudransh, Runmode=N, Expected_Result=SUCCESS, Browser=Chrome, Result=})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test LoginTestinside thePortFolioTest
+	at com.selenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:92)
+	at com.selenium.framework.datadriven.PortFolio.LoginTest.logintest(LoginTest.java:35)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logintest({Username=anjalimarch24@gmail.com, Password=rudransh, Runmode=N, Expected_Result=FAILURE, Browser=Ch...)">
+                  </a> <!-- logintest({Username=anjalimarch24@gmail.com, Password=rudransh, Runmode=N, Expected_Result=FAILURE, Browser=Ch...) -->
+                  <span class="method-name">logintest</span>
+                  <span class="parameters">({Username=anjalimarch24@gmail.com, Password=rudransh, Runmode=N, Expected_Result=FAILURE, Browser=Chrome, Result=})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test LoginTestinside thePortFolioTest
+	at com.selenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:92)
+	at com.selenium.framework.datadriven.PortFolio.LoginTest.logintest(LoginTest.java:35)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PortFolio-class-skipped -->
+          <div class="suite-PortFolio-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.selenium.framework.datadriven.PortFolio.TopAssetsperTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="topperformingassetstest({Runmode=N, Browser=Chrome, Result=})">
+                  </a> <!-- topperformingassetstest({Runmode=N, Browser=Chrome, Result=}) -->
+                  <span class="method-name">topperformingassetstest</span>
+                  <span class="parameters">({Runmode=N, Browser=Chrome, Result=})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test TopPerformingAssetsTestinside thePortFolioTest
+	at com.selenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:92)
+	at com.selenium.framework.datadriven.PortFolio.TopAssetsperTest.topperformingassetstest(TopAssetsperTest.java:33)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="topperformingassetstest({Runmode=N, Browser=Mozilla, Result=})">
+                  </a> <!-- topperformingassetstest({Runmode=N, Browser=Mozilla, Result=}) -->
+                  <span class="method-name">topperformingassetstest</span>
+                  <span class="parameters">({Runmode=N, Browser=Mozilla, Result=})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test TopPerformingAssetsTestinside thePortFolioTest
+	at com.selenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:92)
+	at com.selenium.framework.datadriven.PortFolio.TopAssetsperTest.topperformingassetstest(TopAssetsperTest.java:33)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PortFolio-class-skipped -->
+          <div class="suite-PortFolio-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.selenium.framework.datadriven.PortFolio.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logintest({Username=anjalimarch24@gmail.com, Password=rudransh, Runmode=Y, Expected_Result=SUCCESS, Browser=Mo...)">
+                  </a> <!-- logintest({Username=anjalimarch24@gmail.com, Password=rudransh, Runmode=Y, Expected_Result=SUCCESS, Browser=Mo...) -->
+                  <span class="method-name">logintest</span>
+                  <span class="parameters">({Username=anjalimarch24@gmail.com, Password=rudransh, Runmode=Y, Expected_Result=SUCCESS, Browser=Mozilla, Result=})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Title does not match expected [true] but found [false]
+	at com.selenium.framework.datadriven.PortFolio.LoginTest.logintest(LoginTest.java:59)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PortFolio-class-passed -->
+          <div class="suite-PortFolio-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.selenium.framework.datadriven.PortFolio.TopAssetsperTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="topperformingassetstest({Runmode=Y, Browser=Chrome, Result=})">
+                  </a> <!-- topperformingassetstest({Runmode=Y, Browser=Chrome, Result=}) -->
+                  <span class="method-name">topperformingassetstest</span>
+                  <span class="parameters">({Runmode=Y, Browser=Chrome, Result=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PortFolio-class-passed -->
+          <div class="suite-PortFolio-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.selenium.framework.datadriven.PortFolio.Test3</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test3({Date=11-04-2016, PurchasePrice=13, Runmode=Y, Expected_Result=SUCCESS, Quantity=12, StockName=Asian...)">
+                  </a> <!-- test3({Date=11-04-2016, PurchasePrice=13, Runmode=Y, Expected_Result=SUCCESS, Quantity=12, StockName=Asian...) -->
+                  <span class="method-name">test3</span>
+                  <span class="parameters">({Date=11-04-2016, PurchasePrice=13, Runmode=Y, Expected_Result=SUCCESS, Quantity=12, StockName=Asian Paints Pvt Ltd, Browser=Chrome, Result=})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Title does not match expected [true] but found [false]
+	at com.selenium.framework.datadriven.PortFolio.Test3.test3(Test3.java:29)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PortFolio-class-passed -->
+        </div> <!-- panel PortFolio -->
+        <div panel-name="test-xml-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\RudranshFramework\Frameworkdatadriven\My_WebDriver_Datadriven_framework\src\test\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;My Project&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.selenium.framework.datadriven.CustomListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;suite-files&gt;
+    &lt;suite-file path=&quot;./Suite_A.xml&quot;/&gt;
+  &lt;/suite-files&gt;
+&lt;/suite&gt; &lt;!-- My Project --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-PortFolio" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\RudranshFramework\Frameworkdatadriven\My_WebDriver_Datadriven_framework\src\test\resources\Suite_A.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;PortFolio&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.selenium.framework.datadriven.CustomListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;LoginTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.selenium.framework.datadriven.PortFolio.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginTest --&gt;
+  &lt;test name=&quot;TopAssetsperTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.selenium.framework.datadriven.PortFolio.TopAssetsperTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TopAssetsperTest --&gt;
+  &lt;test name=&quot;Test3&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.selenium.framework.datadriven.PortFolio.Test3&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test3 --&gt;
+  &lt;test name=&quot;LoginTest(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.selenium.framework.datadriven.PortFolio.LoginTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;initLogs&quot;/&gt;
+          &lt;include name=&quot;close&quot;/&gt;
+          &lt;include name=&quot;logintest&quot; invocation-numbers=&quot;1 2&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.selenium.framework.datadriven.PortFolio.LoginTest --&gt;
+      &lt;class name=&quot;com.selenium.framework.datadriven.PortFolio.TopAssetsperTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;initLogs&quot;/&gt;
+          &lt;include name=&quot;close&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.selenium.framework.datadriven.PortFolio.TopAssetsperTest --&gt;
+      &lt;class name=&quot;com.selenium.framework.datadriven.PortFolio.Test3&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;initLogs&quot;/&gt;
+          &lt;include name=&quot;close&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.selenium.framework.datadriven.PortFolio.Test3 --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginTest(failed) --&gt;
+  &lt;test name=&quot;TopAssetsperTest(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.selenium.framework.datadriven.PortFolio.LoginTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;initLogs&quot;/&gt;
+          &lt;include name=&quot;close&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.selenium.framework.datadriven.PortFolio.LoginTest --&gt;
+      &lt;class name=&quot;com.selenium.framework.datadriven.PortFolio.TopAssetsperTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;initLogs&quot;/&gt;
+          &lt;include name=&quot;topperformingassetstest&quot; invocation-numbers=&quot;1 2&quot;/&gt;
+          &lt;include name=&quot;close&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.selenium.framework.datadriven.PortFolio.TopAssetsperTest --&gt;
+      &lt;class name=&quot;com.selenium.framework.datadriven.PortFolio.Test3&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;initLogs&quot;/&gt;
+          &lt;include name=&quot;close&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.selenium.framework.datadriven.PortFolio.Test3 --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TopAssetsperTest(failed) --&gt;
+&lt;/suite&gt; &lt;!-- PortFolio --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for My Project</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-PortFolio" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for PortFolio</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">LoginTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TopAssetsperTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test3 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">LoginTest(failed) (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">TopAssetsperTest(failed) (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for My Project</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-PortFolio" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for PortFolio</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for My Project</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_My_Project');
+function tableData_My_Project() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(0);
+window.suiteTableData['My_Project']= { tableData: data, tableDiv: 'times-div-My_Project'}
+return data;
+}
+              </script>
+              <div id="times-div-My_Project">
+              </div> <!-- times-div-My_Project -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-PortFolio" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for PortFolio</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_PortFolio');
+function tableData_PortFolio() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(7);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'logintest')
+data.setCell(0, 2, 'com.selenium.framework.datadriven.PortFolio.LoginTest')
+data.setCell(0, 3, 31166);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test3')
+data.setCell(1, 2, 'com.selenium.framework.datadriven.PortFolio.Test3')
+data.setCell(1, 3, 19580);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'topperformingassetstest')
+data.setCell(2, 2, 'com.selenium.framework.datadriven.PortFolio.TopAssetsperTest')
+data.setCell(2, 3, 17096);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'topperformingassetstest')
+data.setCell(3, 2, 'com.selenium.framework.datadriven.PortFolio.TopAssetsperTest')
+data.setCell(3, 3, 221);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'topperformingassetstest')
+data.setCell(4, 2, 'com.selenium.framework.datadriven.PortFolio.TopAssetsperTest')
+data.setCell(4, 3, 207);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'logintest')
+data.setCell(5, 2, 'com.selenium.framework.datadriven.PortFolio.LoginTest')
+data.setCell(5, 3, 161);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'logintest')
+data.setCell(6, 2, 'com.selenium.framework.datadriven.PortFolio.LoginTest')
+data.setCell(6, 3, 141);
+window.suiteTableData['PortFolio']= { tableData: data, tableDiv: 'times-div-PortFolio'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-PortFolio">
+              </div> <!-- times-div-PortFolio -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for My Project</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-PortFolio" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for PortFolio</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-PortFolio" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-PortFolio" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.framework.datadriven.PortFolio.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logintest({Username=anjalimarch24@gmail.com, Password=rudransh, Runmode=Y, Expected_Result=SUCCESS, Browser=Mo...)</span>
+                <span class="method-start">1802 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">32976 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">logintest({Username=anjalimarch24@gmail.com, Password=rudransh, Runmode=N, Expected_Result=FAILURE, Browser=Ch...)</span>
+                <span class="method-start">34321 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">34483 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">logintest({Username=anjalimarch24@gmail.com, Password=rudransh, Runmode=N, Expected_Result=SUCCESS, Browser=Ch...)</span>
+                <span class="method-start">34483 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">34625 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.framework.datadriven.PortFolio.TopAssetsperTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">34656 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">topperformingassetstest({Runmode=Y, Browser=Chrome, Result=})</span>
+                <span class="method-start">34732 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">51829 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">topperformingassetstest({Runmode=N, Browser=Mozilla, Result=})</span>
+                <span class="method-start">53692 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">53901 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">topperformingassetstest({Runmode=N, Browser=Chrome, Result=})</span>
+                <span class="method-start">53901 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">54125 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.framework.datadriven.PortFolio.Test3</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">54154 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test3({Date=11-04-2016, PurchasePrice=13, Runmode=Y, Expected_Result=SUCCESS, Quantity=12, StockName=Asian...)</span>
+                <span class="method-start">54311 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">73893 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

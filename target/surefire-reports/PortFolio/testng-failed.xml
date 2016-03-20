@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [PortFolio]">
+  <listeners>
+    <listener class-name="com.selenium.framework.datadriven.CustomListener"/>
+  </listeners>
+  <test name="LoginTest(failed)" preserve-order="false">
+    <classes>
+      <class name="com.selenium.framework.datadriven.PortFolio.TopAssetsperTest">
+        <methods>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class>
+      <class name="com.selenium.framework.datadriven.PortFolio.Test3">
+        <methods>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class>
+      <class name="com.selenium.framework.datadriven.PortFolio.LoginTest">
+        <methods>
+          <include name="initLogs"/>
+          <include name="close"/>
+          <include name="logintest" invocation-numbers="1 2 0"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="TopAssetsperTest(failed)" preserve-order="false">
+    <classes>
+      <class name="com.selenium.framework.datadriven.PortFolio.TopAssetsperTest">
+        <methods>
+          <include name="initLogs"/>
+          <include name="topperformingassetstest" invocation-numbers="1 2 0"/>
+          <include name="close"/>
+        </methods>
+      </class>
+      <class name="com.selenium.framework.datadriven.PortFolio.Test3">
+        <methods>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class>
+      <class name="com.selenium.framework.datadriven.PortFolio.LoginTest">
+        <methods>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="Test3(failed)" preserve-order="false">
+    <classes>
+      <class name="com.selenium.framework.datadriven.PortFolio.TopAssetsperTest">
+        <methods>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class>
+      <class name="com.selenium.framework.datadriven.PortFolio.Test3">
+        <methods>
+          <include name="test3" invocation-numbers="0"/>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class>
+      <class name="com.selenium.framework.datadriven.PortFolio.LoginTest">
+        <methods>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
